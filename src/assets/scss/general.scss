@@ -1,0 +1,45 @@
+@mixin cont {
+    font: icon;
+    margin: 0 5px;
+    font-size: 10px;
+    display: flex;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+@mixin width {
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@mixin height {
+    height: 16vh;
+}
+
+/* HEDER */
+.mynav {
+    @include width();
+}
+
+.nav-list {
+    @include cont();
+}
+
+a {
+    @include cont();
+}
+
+/* MAIN */
+.first-box,
+.second-box {
+    @include height();
+    @include width();
+}
+
+/* FOOTER */
+.footer-2 {
+    @include height();
+}
