@@ -1,27 +1,27 @@
 <script>
-import MainSection from './components/MainSection.vue';
-import HeaderMenu from './components/HeaderList.vue';
-import FooterList from './components/FooterList.vue';
+import AppFooter from "./components/AppFooter.vue";
+import AppHeader from "./components/AppHeader.vue";
+import ComicsList from "./components/ComicsList.vue";
 
 export default {
-  return {
-    logo: './src/'
-
-  },
   components: {
-    MainSection,
-    HeaderMenu,
-    FooterList,
-  }
-}
+    AppHeader,
+    AppFooter,
+    ComicsList,
+  },
+};
 </script>
 
 <template>
-  <HeaderMenu />
-  <MainSection />
-  <FooterList />
+  <AppHeader />
+
+  <main>
+    <ComicsList />
+  </main>
+
+  <AppFooter />
 </template>
 
 <style lang="scss">
-@use "./assets/scss/general.scss";
+@use "./styles/general.scss";
 </style>

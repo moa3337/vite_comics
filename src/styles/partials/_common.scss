@@ -1,0 +1,72 @@
+@use 'variables' as *;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: $text_color;
+    font-family: $text_font_family;
+    font-size: $text_font_size;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $title_font_family;
+}
+
+a {
+    text-decoration: none;
+}
+
+.button {
+    background: $main_color;
+    color: $main_bg_text_color;
+    font-family: "Open Sans Condensed", sans-serif;
+    font-weight: 700;
+    padding: 10px 60px;
+    text-transform: uppercase;
+}
+
+.container {
+    max-width: 1250px;
+    margin: auto;
+}
+
+.small-container {
+    max-width: 1020px;
+    margin: auto;
+}
+
+.clearfix::after,
+.container::after,
+.small-container::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.dark {
+    background-color: $dark_section_bg_color;
+    color: $dark_section_text_color;
+}
+
+.section-title {
+    background-color: $main_color;
+    color: $main_bg_text_color;
+    display: inline-block;
+    font-size: 32px;
+    margin: 0;
+    padding: 10px 30px;
+    transform: translateY(-50%);
+}
